@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<html>
+<head>
+    <title>Belanja Minimarket</title>
+</head>
+
+<body>
+
+<h2 align="center">MINIMARKET</h2>
+<h3>Daftar Belanja</h3>
+
+<table border="1" cellpadding="3" cellspacing="0" width="20%">
+    <tr>
+        <th>No</th>
+        <th>Nama Barang</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Total</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Beras</td>
+        <td>75000</td>
+        <td><input type="number" id="j1" value="1"></td>
+        <td id="t1">75.000</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Minyak Goreng</td>
+        <td>18000</td>
+        <td><input type="number" id="j2" value="2"></td>
+        <td id="t2">36.000</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Gula</td>
+        <td>16000</td>
+        <td><input type="number" id="j3" value="3"></td>
+        <td id="t3">48.000</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Mi Instan</td>
+        <td>3500</td>
+        <td><input type="number" id="j4" value="4"></td>
+        <td id="t4">14.000</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Susu</td>
+        <td>8000</td>
+        <td><input type="number" id="j5" value="5"></td>
+        <td id="t5">40.000</td>
+    </tr>
+</table>
+
+<br>
+
+<button onclick="hitung()">Hitung Total</button>
+
+<h3>Total Belanja: Rp <span id="total">0</span></h3>
+
+<script>
+function hitung() {
+    var h1 = 75000 * document.getElementById("j1").value;
+    var h2 = 18000 * document.getElementById("j2").value;
+    var h3 = 16000 * document.getElementById("j3").value;
+    var h4 = 3500 * document.getElementById("j4").value;
+    var h5 = 8000 * document.getElementById("j5").value;
+
+    document.getElementById("t1").innerHTML = h1;
+    document.getElementById("t2").innerHTML = h2;
+    document.getElementById("t3").innerHTML = h3;
+    document.getElementById("t4").innerHTML = h4;
+    document.getElementById("t5").innerHTML = h5;
+
+    var total = h1 + h2 + h3 + h4 + h5;
+
+    document.getElementById("total").innerHTML = total;
+}
+</script>
+
+</body>
+</html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
