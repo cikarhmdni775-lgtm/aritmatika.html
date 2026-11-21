@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar cakupan variabel</title>
+</head>
+<body>
+    <h1>cek hasil di console browser</h1>
+
+   <script>
+      function printCompanyInfo(){
+        const name = 'Pt.Cikarhmdni';
+        const legal = 'LLC';
+
+        console.log('company nama:', name);
+        console.log('legal type:', legal);
+      }
+
+      function printEmployeeInfo(){
+        const name = 'Cika';
+        const position = 'software engineer';
+
+        console.log('employee name: ', name);
+        console.log('position: ', position);
+      }
+
+      function printStringInfo(){
+        const number = 123;
+        const boolean = true;
+
+       const strNumber = String(number);
+       const strBoolean = boolean.toString();
+
+       console.log(strNumber); // output: "123"
+       console.log(strBoolean); // output: "true"
+      }
+
+      function printNumberInfo(){
+        const strNumber = '123';
+        const strFloat = '3.14';
+        const boolean = true;
+
+        const numFromString = Number(strNumber);
+        const floatFromString = Number(strFloat);
+        const numFromBoolean = Number(boolean);
+
+        console.log(numFromString); // output: 123
+        console.log(floatFromString); // output: 3.14
+        console.log(numFromBoolean); // output: 1
+      }
+       function printParsenIntInfo(){
+        const cm = '20cm';
+        const px = '64px';
+
+        const intFromCM = parseInt(cm);
+        const intFromPX = parseInt(px);
+
+        console.log(intFromCM); // output: 20
+        console.log(intFromPX); // output: 64
+       }
+       function printParseFloatInfo(){
+        const cm = '20.55cm';
+        const px = '64.23px';
+
+        const floatFromCM = parseFloat(cm);
+        const floatFromPX = parseFloat(px);
+
+        console.log(floatFromCM); // output: 20.55
+        console.log(floatFromPX); // output: 64.23
+       }
+       function printBooleanInfo(){
+        const number = 123;
+        const string = 'Dicoding';
+        const empty = null;
+
+        const boolFromNumber = Boolean(number);
+        const boolFromString = Boolean(string);
+        const boolFromNull = Boolean(empty);
+
+        console.log(boolFromNumber); // output: true
+        console.log(boolFromString); // output: true
+        console.log(boolFromNull); // output: false
+       }
+       function printKonversiImplisitInfo(){
+        const age = 20;
+        const message = 'Umurku: ' + age;
+
+        console.log(message); // output: Umurku: 20
+       }
+       function printOperatorAndStringInfo(){
+        const strNumber = '123';
+        const result = strNumber * 2;
+
+        console.log(result); // output: 246
+       }
+       function printAritmetikaInfo(){
+        const bool = true;
+        const result = 1 + bool;
+
+        console.log(result); // output: 2
+       }
+
+      printCompanyInfo();
+      printEmployeeInfo();
+      printStringInfo();
+      printNumberInfo();
+      printParsenIntInfo();
+      printParseFloatInfo();
+      printBooleanInfo();
+      printKonversiImplisitInfo();
+      printOperatorAndStringInfo();
+      printAritmetikaInfo();
+
+   </script>  
+</body>
+</html>
